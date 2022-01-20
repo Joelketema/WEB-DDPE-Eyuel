@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Services</title>
+</head>
+<body>
+
+    <table width =100%>
+        <tr>
+           <td width =10%> </td>
+           <td>
+               
+             <h1>E-Services.</h1>
+           </td>
+
+           <td width =10%>
+               <span><a href="index.html"> Home</a></span>
+           </td>
+           
+
+           <td width =10%>
+               <span> <a href="#job">Job Application</a></span>
+            </td>
+            <td width =10%>
+                <span> <a href="LAB .html"> Audio & Video</a></span>
+             </td>
+             <td width =10%>
+                 <span> <a href="signup.html"> Sign IN</a></span>
+              </td>
+              <td width =10%>
+                  <span> <a href="regist.html"> Regsitration</a></span>
+               </td>
+
+               <td width="8%" align ="center" > <span class="dark"> Dark Mode</span></td>
+
+            
+
+          <td width="8%" align ="center"> <button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+            <p id="demo"></p></td>
+<tr>
+
+
+
+</td>
+
+        </tr>
+    </table>
+    <hr>
+
+    <table  width =100%>
+        <tr>
+
+           <td colspan="2">
+               <img src="resources/images/hotelimage.jpg" alt="picture of a hotel" width="100%" height="500px">
+            </td>
+        </tr>
+
+        <tr><td colspan="2"><center><span><h3 id="job">Job Application</h3></span></center></td>  </tr>
+
+        <tr height=40px>
+            <td></td>
+        </tr>
+
+        <tr>
+
+            <td width=35%></td>
+
+            <td colspan="2">
+                <img src="resources/images/job.png" alt="" srcset="" width="200px">
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td width=21%></td>
+            <td>
+             <p>Start Looking for a New Job</p>
+           </td>
+        </tr>
+        <tr>
+            <td width=0%></td>
+            <td>
+              <a href="resources/pages/job.html"><button>Job Application</button></a>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table  width=100% id="reserve">
+        <tr>
+            <td width =5%>
+
+            </td>
+            <td>
+               <a href="resources/pages/hotel.html" target="_blank"><img src="resources/images/bed.jpg" alt="" srcset="" width="500px"></a>
+            </td>
+
+            <td>
+                <center> <h2>Choose your package</h2> </center>
+                <select id="mySelect" onchange="myFunction()">
+                    <option value="Family">Family</option>
+                    <option value="Presidental">Presidental</option>
+                    <option value="double bed">double</option>
+                    <option value="Bunk beds">Bunk</option>
+                  </select>
+                  
+                 
+                  
+                  <p id="demo1"></p>
+            </td>
+
+
+            <td width =20%>
+
+            </td>
+        </tr>
+
+
+     <tr height=100px>
+
+</tr>
+	<tr>
+            <td width =5%>
+
+            </td>
+            <td>
+               <a href="resources/pages/hotel.html#pizza"><img src="resources/images/pizza.jfif" alt="" srcset="" width="500px"></a>
+            </td>
+
+            <td>
+               <a href="resources/pages/hotel.html#pizza"> <h1>Pizza delivery</h1></a>
+
+                    <details> <summary>Locations</summary>
+                        <label><h2>Piassa</h2> </label>
+                        <br>
+                        <label><h2>Bole</h2>  </label>
+
+                    </details>
+
+            </td>
+
+
+            <td width =20%>
+
+            </td>
+       	 </tr>
+
+        <tr>
+            <td width=5%></td>
+            <td>
+
+            </td>
+            <td>
+                <a href="resources/pages/feedback.html">Click Here to give FeedBack...</a>
+            </td>
+        </tr>
+
+	<tr height=100px>
+
+	</tr>
+
+    </table>
+
+<br><hr>
+    <table width=100%>
+
+             <tr>
+		<td width="10%"> </td>
+		<td width="60%" align="left">Follow Us On: <a href="#facebook">Facebook </a> |  <a href="#Twitter">Twitter </td>
+
+		<td align="right" >  <a href="#facebook">Privacy </a> | <a href="#facebook">Term of use </a></td>
+		<td width="10%"> </td>
+		</tr>
+
+		<tr>
+		<td colspan="4"><center>Copyright  AASTU SEng 2021, All Rights Reserved
+       		</tr>
+    </table>
+
+<div id="bottom">
+<a href="#">Go to Top</a>
+</div>
+<script>
+    function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo1").innerHTML = "You selected: " + x;
+}
+</script>
+
+<script src="app2.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza delivery website</title>
+</head>
+<body>
+    <table width =100%>
+        <tr>
+           <td width =10%> </td>
+           <td>
+             <h1>E-Services.</h1>
+           </td>
+    
+           <td width =10%> 
+               <span><a href="/index.html"> Home</a></span>
+           </td>
+
+           <td width =10%>
+               <span> <a href="job.html">Job Application</a></span>
+            </td>
+            <td width =10%>
+                <span> <a href="feedback.html"> Feedback</a></span>
+             </td>
+             <td width =17%>
+                <span><a href="hotel.html"> Reservation and Delivery</a></span>
+             </td>
+             <td>
+                <span><a href="svg.html"> SVG</a></span>
+
+             </td>
+
+           <td width =5%> </td>
+
+        </tr>
+
+    </table>
+    <hr>
+    <table width="100%">
+       <tr>
+           <td width="30%"> 
+           <td width="50%"><a href="#reservation">Resrvation</a>
+            <br>
+            <a href="#pizza">Pizza delivery</a></td></td>
+           <td></td>
+       </tr>
+<tr>
+    <td>
+
+    </td>
+        <td width="50%"> 
+            <h1 id="reservation">Reservation Request</h1>
+            <form>
+            <fieldset>
+                <legend style="color: blue;">General Information</legend>
+                <label>Date</label>
+                <input type="date" required>
+                <br>
+                <label>Nights</label>
+                <input type="number" required min=0 max="5">
+                <br>
+                <label for="">Adults</label>
+                <input type="number" min=0 max=5>
+                <br>
+                <label for="">Children</label>
+                <input type="number" min=0 max=10>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Prefrences</legend>
+                <label> Room type</label>
+                <label><input type="radio" name="n">Standard</label>
+                <label><input type="radio" name="n">Business</label>
+                <label><input type="radio" name="n">Suite</label>
+                <br>
+                <label>Bed type</label>
+                <label><input type="radio" name="y">King</label>
+                <label><input type="radio" name="y">Double Double</label>
+                <label><input type="radio" name="y">Smoking</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact information</legend>
+                <label>Name</label>
+                <input type="text" required>
+                <br>
+                <br>
+                <label>Email</label>
+                <input type="email" required>
+                <br>
+                <br>
+                <label> Phone</label>
+                <input type="tel">
+            </fieldset>
+            <br>
+<center><button>Submit Reservation</button>
+<input type="reset"></button></center>
+<br>
+<br>
+        </td>
+        <td>
+            
+        </form>
+
+           
+        </td>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <fieldset>
+                <h1 id="pizza"> PIZZA delivery</h1>
+            <h3>Online order form</h3>
+            <form >
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text"></td>
+                        <td><label>Tel</label>
+                            </td>
+                        <td><input type="tel"> </td>
+                    </tr>
+                    <tr>
+                        <td><label align="center">Address</label> 
+                            </td>
+                        <td><input type="text"></td>
+                        <td><label> Email</label>
+                            </td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Town city</label>  </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Postcode</label> 
+           </td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+           
+           
+           
+           
+           <br>
+          
+                <table wdith="50%">
+                    <tr>
+                    <td>
+                        
+           <fieldset style="width: fit-content;" >
+               <legend>Topings</legend>
+               <input type="radio" name="z" id=""> <label>Margharita</label>
+               
+               <br>
+               <input type="radio" name="z" id="">
+               <label>Four Seasons</label>
+               
+               <br>
+               <input type="radio" name="z" id="">
+               <label>Meat Feast</label>
+               
+
+           </fieldset>
+           </td>
+           <td>
+           <fieldset style="width:fit-content">
+            <legend>Size</legend>
+            <input type="radio" name="z" id="">
+             <label>Small</label>
+            
+            <br>
+            <input type="radio" name="z" id="">
+             <label>Medium</label>
+            
+            <br>
+            <input type="radio" name="z" id="">
+            <label>Large</label>
+            
+
+        </fieldset>
+    </td>
+    <td>
+        <fieldset style="width:fit-content">
+            <legend>Extras</legend>
+        
+           
+            <input type="checkbox" id=""> 
+            <label>Mushrooms</label>
+            
+           
+            <br>
+            <input type="checkbox" id="">
+            <label>Green peppers</label>
+            
+            <br>
+            <input type="checkbox" id="">
+             <label>Anchovies</label>
+            
+            <br>
+            <input type="checkbox" id="">
+            <label>Extra cheese</label>
+            
+
+        </fieldset>
+
+    </td>
+    </tr>
+                </table>
+                <label for="">Prefered delivery time</label>
+                    <input type="date">
+                    <br>
+                    <br>
+                    <label>Delivery instructions/ address</label>
+            <textarea wdith="100px" height="45px"></textarea>
+              <br>
+              <br>
+
+       <center><button> Submit Order</button></center> 
+            </td>
+        </fieldset>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
