@@ -11,13 +11,13 @@
 
 <style>
 
-  #replace
+  #replace,#removeAudio,#addElement
   {
     transition: all 1000ms fade;
     cursor: pointer;
   }
 
-  #replace:hover
+  #replace:hover,#removeAudio:hover,#addElement:hover
   {
     transform: scale(1.1);
     box-shadow: 0 5px 5px grey;
@@ -133,6 +133,9 @@ Third   1GB Mobile Data
     <hr width="100%">
     <br>
 	<button id="replace" onclick="replace()" style="border: 1px solid black;background:transparent;padding: 20px; margin:0px 60px;" >Replace </button>
+  <button id="removeAudio" onclick="removeAudio()" style="border: 1px solid black;background:transparent;padding: 20px; margin:0px 60px;">Remove Audio</button>
+
+  <button id="addElement" onclick="addElement()" style="border: 1px solid black;background:transparent;padding: 20px; margin:0px 60px;">Add New Element</button>
  </td>
 <td> </td>
 <td> </td>
@@ -165,7 +168,10 @@ Third   1GB Mobile Data
         const listItem = document.querySelector(".rep")
         const btn = document.querySelector('#replace')
         newelement=document.createElement('label')
-      
+      if(listItem.children.length == 0)
+      {
+        alert("No element to remove please refresh page")
+      }
        if(listItem.firstElementChild.className == "audio")
         {
            newelement.innerHTML = '<video src="video/24_HOURS.mp4" controls muted width="500px">';
@@ -185,11 +191,40 @@ Third   1GB Mobile Data
  
 
     }
+
+    function removeAudio()
+    {
+      const listItem = document.querySelector('.rep');
+
+      if(listItem.firstElementChild.className =="audio")
+      {
+        listItem.removeChild(listItem.firstElementChild);
+      }
+
+      else
+      {
+        alert("Please change element to Audio to remove")
+      }
+    }
+
+    function addElement()
+    {
+      const listItem = document.querySelector('.rep');
+      newE = document.createElement('img')
+      newE.src = "./LOGO.png"
+
+      listItem.appendChild(newE)
+    }
 </script>
 
 
 
 
+
+
+
+</body>
+</html>
 
 
 
