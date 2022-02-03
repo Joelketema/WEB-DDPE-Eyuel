@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta description="About successfull people and their ways to successs including Eric Hoffer an jack ma with a pick o the weekly movie" keywords="Eric Hoffer ","jack ma" ,"power of self education" author ="Group 1">
+
+<title> Life hacks </title> 
+
+<style>
+
+	.output{
+		border: 1px solid black;
+		min-width: 200px;
+		min-height: 200px;
+	}
+
+	h3
+	{
+		text-align: center;
+	}
+</style>
+
+
+
+ </head>
+<body>
+<table  width="100%">
+<tr >
+<td width="10%"> </td>
+<td width="55%" > <img src="logo_gold.png" alt="logo" width="80px" height="100px"></td>
+
+<td><a href="../index.html ">Home</a>|</td>
+<td> <a href="# ">articles|</td>
+<td> <a href="# ">ideas |</td>
+<td> <a href="# ">about us | </td>
+<td> <a href="# ">Contact us | </td>
+<td width="10%"> </td>
+
+</tr>
+
+
+</table >
+
+
+<table width="100%" >
+<tr>
+<td width="10%" > </td>
+
+<td width="60%"> </td>
+<td align ="right"> <a href="#bottom ">Go to bottom</td>
+<td width="10%"> </td>
+</tr>
+
+<tr>
+
+<td width="10%" > </td>
+<td width="60%"> 
+
+</td>
+
+<td align ="left"></td>
+<td width="10%"> </td>
+</tr>
+<tr>
+<td width="10%"> </td>
+<td width="60%">
+
+<form>
+
+<h1> Register  </h1>
+
+<label> Fullname </label>
+<br>
+<input type="text"  size="50%" required max="50" id="fname"> <br><br>
+<label>Phone</label>
+<br> <input type="tel"  size="50%"  required id="phone">
+
+<br>
+<label>Age</label>
+<br> <input type="number" min="18" max="30" required id="age">
+
+
+<br><label>Your favorite color </label><br>
+<input type="color" id="color"/>
+
+<br><label>Birthday </label><br>
+<input type="date">
+
+<br><label>Gender </label><br>
+<input type="radio"  name="gen"/>Female
+<input type="radio"  name="gen"/>Male
+
+<br><label>Password</label>
+<br><input type="password" min="6" max="32" size="50%">
+
+
+<br><label>Confirm Password</label>
+<br><input type="password" min="6" max="32"  size="50%">
+
+
+<br><label> Skills </label><br>
+
+<ul type="rect">
+
+	<li> <input type ="Checkbox" /> HTML</li> 
+	<li> <input type ="Checkbox" /> CSS</li> 
+	<li> <input type ="Checkbox" />Javascript</li> 
+	<li> <input type ="Checkbox" />PHP</li> 
+	
+</ul>
+<br>
+
+<label>Country</label>
+<br>
+<select>
+	<option> Ethiopia</option>
+	<option> Kenya</option>
+</select>
+
+<br><br>
+
+<label>Photo </label>
+<input type ="file" accept="image/*">
+
+<br>
+
+<br>
+
+<label>Describe yourself </label> <br>
+<textarea width="200px"> </textarea>
+
+<br>
+<br>
+<input type="submit" value ="Submit" id="sub">
+<input type="reset">
+</form>
+
+</td>
+<td align="top"> 
+
+	<div class="output">
+		<h3>Your input</h3>
+	</div>
+ <h2> Recent Post </h2><ul>
+
+<li>Articles</li>
+<ul>
+<li> The Importance of Goals, Especially During Difficult Times</li> <li> 5 Steps to Discovering Your Life Purpose In 2022! </li>
+</ul>
+<li> Ideas</li>
+<ul><li> 10 Books to Read in The Fall </li>
+<li> Top Web Development Projects Ideas </li>
+</ul>
+</ul>
+<h3>Most Viewed Articls </h3>
+<ol type="I">
+<li>  Instant Gratification Is Stopping You From Reaching Your Goals!</li>
+<li>Stop Juggling Between Work And Life </li>
+</ol>
+<h3>  IP Project Winners</h3> 
+<pre>
+---------------------------------
+Rank    Award 
+---------------------------------
+First   Free hosting and support 
+Second  5GB Mobile Data 
+Third   1GB Mobile Data 
+---------------------------------- 
+
+</pre>
+
+
+</td>
+<td width="10%"> </td>
+</tr>
+<tr>
+<td width="10%" > </td>
+<td width="60%"></td>
+<td> </td> 
+<td width="10%"> </td>
+</tr>
+
+<hr>
+
+<tr>
+<td width="10%"> </td>
+<td width="60%" ></td>
+
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td width="10%"> </td>
+<td width="60%" align="left">Follow Us On: <a href="#facebook">Facebook </a> |  <a href="#Twitter">Twitter </td>
+
+<td align="right" >  <a href="#facebook">Privacy </a> | <a href="#facebook">Term of use </a></td>
+<td width="10%"> </td>
+</tr>
+<tr>
+<td colspan="4"><center>Copyright  AASTU SEng 2021, All Rights Reserved
+
+</center>  </td> 
+</tr>
+
+</table>
+
+<script>
+
+	function set(v)
+	{
+		this.value = v
+	}
+
+	const all = {}
+	const fname = document.getElementById('fname')
+	const age = document.getElementById('age')
+	const phone = document.getElementById('phone')
+	const color = document.getElementById('color')
+
+	fname.addEventListener('input',()=>{
+		const obj1 = new set(fname.value);
+		all.FirstName = obj1.value
+	})
+
+
+	age.addEventListener('input',()=>{
+		const obj2= new set(age.value);
+		all.Age = obj2.value
+	})
+
+	phone.addEventListener('input',()=>{
+		const obj3 = new set(phone.value);
+		all.Phone = obj3.value
+	})
+
+	color.addEventListener('click',()=>{
+		const obj4 = new set(color.value);
+		all.Color = obj4.value
+	})
+
+document.getElementById('sub').addEventListener('click',(e)=>{
+	e.preventDefault()
+	const parent = document.querySelector('.output')
+
+	const f=document.createElement('h4')
+	f.innerHTML = "First Name: " + all.FirstName
+
+	const a = document.createElement('h4')
+	a.innerHTML = "Age: " + all.Age
+
+	const p = document.createElement('h4')
+	p.innerHTML = "Phone: " +  all.Phone
+
+	const c= document.createElement('h4')
+	c.innerHTML = "Color: " + all.Color + " Airplane"
+	
+	parent.appendChild(f)
+	parent.appendChild(a)
+	parent.appendChild(p)
+	parent.appendChild(c)
+
+
+})
+
+ // all = Object.assign(obj1,obj2,obj3,obj4)
+  
+
+</script>
+</body>
+</html>
